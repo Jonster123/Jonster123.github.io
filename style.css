@@ -403,6 +403,7 @@ media queries for progressively bigger screen widths
     "Ci1 Ci1 Ci1 Ci1" minmax(8em, auto)
     "Ci2 Ci2 Ci2 Ci2" minmax(8em, auto)
     "Ci5 Ci5 Ci5 Ci5" minmax(8em, auto)
+    " .   .   .   . " minmax(10em, auto)
     "TT7 TT7 TT7 TT7" minmax(6em, auto)
    
 }
@@ -437,6 +438,7 @@ media queries for progressively bigger screen widths
     "Ci1 Ci1 Ci1 Ci1" minmax(8em, auto)
     "Ci2 Ci2 Ci2 Ci2" minmax(8em, auto)
     "Ci5 Ci5 Ci5 Ci5" minmax(8em, auto)
+    " .   .   .   . " minmax(10em, auto)
     "TT7 TT7 TT7 TT7" minmax(6em, auto)
   }
 }
