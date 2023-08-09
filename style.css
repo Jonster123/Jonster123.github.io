@@ -18,7 +18,7 @@ body {
 
 /* Defines the main container size, we are limiting to 72em max and centring in the viewport */
 .main-container {
-    max-width: 250em;
+    max-width: 72em;
     margin: 0 auto;
     font-family: Inter;
     color: var(--white-font);
@@ -44,53 +44,6 @@ body {
 }
 
 .team-member-card {
-    /* TODO: style the card as a column based flexbox with rounded corners */
-}
-
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.team-member-card-image {
-    width: 100%;
-}
-
-.team-member-card-blurb {
-    /* TODO: style the blurb with padding */
-}
-
-.our-clients-title {
-    /* TODO: style the 'Our Clients' text font */
-}
-
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.client-icon {
-    width: 100%;
-}
-
-/* now we create names for the grid areas for specific elements */
-#banner {
-    /* TODO: give the grid-area a name */
-    grid-area:  ban;
-
-}
-
-#teamMemberCard1 {
-    /* TODO: give the grid-area a name */
-   display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    border-radius: 10px; /* Rounded corners */
-    background-color: var(--color2);
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-}
-
-#teamMemberCard1:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-#teamMemberCard2 {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center horizontally */
@@ -101,26 +54,50 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#teamMemberCard2:hover {
+.team-member-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.team-member-card-image {
+    width: 100%;
+}
+
+.team-member-card-blurb {
+    
+}
+
+.our-clients-title {
+    Oct
+}
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.client-icon {
+    width: 100%;
+}
+
+/* now we create names for the grid areas for specific elements */
+#banner {
+    grid-area:  ban;
+
+}
+
+#teamMemberCard1 {
+   grid-area:tm1
+}
+
+
+#teamMemberCard2 {
+   grid-area:tm2
+}
+
 
 #teamMemberCard3 {
-   display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    border-radius: 10px; /* Rounded corners */
-    background-color: var(--color2);
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   grid-area:tm3
 }
 
-#teamMemberCard3:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+
 
 #SubTittle {
     /* TODO: give the grid-area a name */
@@ -183,17 +160,16 @@ body {
 
 #Text1 {
     grid-area:  TT1;
-    font-size: calc(2em + 1vw); /* Adjust the base font size and scaling factor as needed */
     background-color: #3498db; /* Blue background color */
     color: #ffffff; /* White text color */
     border-radius: 10px; /* Rounded edges */
     padding: 1rem; /* Added padding for spacing */
     text-align: center; /* Center-align the text */
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text1:hover {
@@ -203,13 +179,12 @@ body {
 
 #Text2 {
     grid-area:  TT2;
-    font-size: calc(2em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
     background-color: #3498db; /* Blue background color */
     color: #ffffff; /* White text color */
     border-radius: 10px; /* Rounded edges */
     padding: 1rem; /* Added padding for spacing */
     text-align: center; /* Center-align the text */
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -222,13 +197,12 @@ body {
 }
 #Text3 {
     grid-area:  TT3;
-    font-size: calc(2em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
     background-color: #3498db; /* Blue background color */
     color: #ffffff; /* White text color */
     border-radius: 10px; /* Rounded edges */
     padding: 1rem; /* Added padding for spacing */
     text-align: center; /* Center-align the text */
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -241,13 +215,12 @@ body {
 }
 #Text4 {
     grid-area:  TT4;
-    font-size: calc(2em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
     background-color: #3498db; /* Blue background color */
     color: #ffffff; /* White text color */
     border-radius: 10px; /* Rounded edges */
     padding: 1rem; /* Added padding for spacing */
     text-align: center; /* Center-align the text */
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -260,13 +233,12 @@ body {
 }
 #Text5 {
     grid-area:  TT5;
-    font-size: calc(2em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
     background-color: #3498db; /* Blue background color */
     color: #ffffff; /* White text color */
     border-radius: 10px; /* Rounded edges */
     padding: 1rem; /* Added padding for spacing */
     text-align: center; /* Center-align the text */
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -280,13 +252,12 @@ body {
 
 #Text6 {
     grid-area:  TT6;
-    font-size: calc(2em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
     background-color: #3498db; /* Blue background color */
     color: #ffffff; /* White text color */
     border-radius: 10px; /* Rounded edges */
     padding: 1rem; /* Added padding for spacing */
     text-align: center; /* Center-align the text */
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -319,9 +290,8 @@ Because this CSS definition comes first, it will apply by default. Then we overr
 media queries for progressively bigger screen widths
 */
 .main-container {
-    /* TODO: setup the grid-template for mobile phone layout */
     
-    grid-template:
+   grid-template:
     "ban ban ban ban" minmax(6em, auto)
     " .   .   .   . " minmax(2em, auto)
     "tm1 tm1 tm1 tm1" minmax(30em, auto)
@@ -350,72 +320,63 @@ media queries for progressively bigger screen widths
     "Ci3 Ci3 Ci4 Ci4" minmax(8em, auto)
     "Ci5 Ci5 Ci6 Ci6" minmax(8em, auto)
     "Ci7 Ci7 Ci8 Ci8" minmax(8em, auto)
-    
+   
 }
 
 @media (min-width: 50em) {
-    .main-container {
-    /* TODO: setup the grid-template for tablet layout */
+  .main-container {
     
     grid-template:
-    "ban ban ban ban" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "tm1   tm2   tm3" minmax(60em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "Oct Oct Oct Oct" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "Ci9 Ci9 Ci9 Ci9" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT1 TT1 TT1 TT1" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT2 TT2 TT2 TT2" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT3 TT3 TT3 TT3" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT4 TT4 TT4 TT4" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT5 TT5 TT5 TT5" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT6 TT6 TT6 TT6" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "Ci1 Ci1 Ci2 Ci2" minmax(16em, auto)
-    "Ci3 Ci3 Ci4 Ci4" minmax(16em, auto)
-    "Ci5 Ci5 Ci6 Ci6" minmax(16em, auto)
-    "Ci7 Ci7 Ci8 Ci8" minmax(16em, auto)
- 
-    }
+    "ban ban ban ban" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm1 tm2 tm2 tm3" minmax(30em, auto)
+    " .  tm2 tm2  . " minmax(2em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "Oct Oct Oct Oct" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "Ci9 Ci9 Ci9 Ci9" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT1 TT1 TT1 TT1" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT2 TT2 TT2 TT2" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT3 TT3 TT3 TT3" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT4 TT4 TT4 TT4" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT5 TT5 TT5 TT5" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT6 TT6 TT6 TT6" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "Ci1 Ci1 Ci2 Ci2" minmax(8em, auto)
+    "Ci3 Ci3 Ci4 Ci4" minmax(8em, auto)
+    "Ci5 Ci5 Ci6 Ci6" minmax(8em, auto)
+    "Ci7 Ci7 Ci8 Ci8" minmax(8em, auto)
+  }
 }
 
 @media (min-width: 75em) {
-    .main-container {
-    /* TODO: setup the grid-template for tablet layout */
-
-    grid-template:
+  .main-container {
     
-    "ban ban ban ban" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "tm1   tm2   tm3" minmax(30em, auto) /* Adjust the size as needed */
-    " .   .   .   . " minmax(4em, auto)
-    "Oct Oct Oct Oct" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "Ci9 Ci9 Ci9 Ci9" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT1 TT1 TT1 TT1" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT2 TT2 TT2 TT2" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT3 TT3 TT3 TT3" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT4 TT4 TT4 TT4" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT5 TT5 TT5 TT5" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "TT6 TT6 TT6 TT6" minmax(12em, auto)
-    " .   .   .   . " minmax(4em, auto)
-    "Ci1 Ci1 Ci2 Ci2" minmax(16em, auto)
-    "Ci3 Ci3 Ci4 Ci4" minmax(16em, auto)
-    "Ci5 Ci5 Ci6 Ci6" minmax(16em, auto)
-    "Ci7 Ci7 Ci8 Ci8" minmax(16em, auto)
- 
-    }
+    grid-template:
+    "ban ban ban ban" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm1 tm2 tm2 tm3" minmax(30em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "Oct Oct Oct Oct" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "Ci9 Ci9 Ci9 Ci9" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT1 TT1 TT2 TT2" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT3 TT3 TT4 TT4" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "TT5 TT5 TT6 TT6" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "Ci1 Ci1 Ci2 Ci2" minmax(8em, auto)
+    "Ci3 Ci3 Ci4 Ci4" minmax(8em, auto)
+    "Ci5 Ci5 Ci6 Ci6" minmax(8em, auto)
+    "Ci7 Ci7 Ci8 Ci8" minmax(8em, auto)
+  }
 }
+
