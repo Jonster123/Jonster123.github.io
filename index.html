@@ -12,10 +12,11 @@
             overflow: auto;
         }
         canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* This ensures the canvas doesn't capture mouse events */
+}}
     </style>
 </head>
 <body>
