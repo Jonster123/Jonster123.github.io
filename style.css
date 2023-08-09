@@ -360,7 +360,7 @@ media queries for progressively bigger screen widths
     grid-template:
     "ban ban ban ban" minmax(12em, auto)
     " .   .   .   . " minmax(4em, auto)
-    "tm1 tm2 tm2 tm3" minmax(60em, auto)
+    "tm1   tm2   tm3" minmax(60em, auto)
     " .   .   .   . " minmax(4em, auto)
     "Oct Oct Oct Oct" minmax(12em, auto)
     " .   .   .   . " minmax(4em, auto)
