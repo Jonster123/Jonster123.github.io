@@ -9,6 +9,11 @@ variables are available to be used anywhere in our html document
     --black-font: #000000;
     --color1: #98BFC6;
     --color2: #65929A;
+    --color3: #F4B4BA;
+    --color4: #FEE8DC;
+    --color5: #F9DEDA;
+    --color6: #F29D9D;
+    --color7: #706E6A;
     /* add in other color variables for color pallete */
 }
 body {
@@ -27,9 +32,19 @@ body {
 
 /* Here we define the aspects of style of our elements other than their grid layout */
 .banner {
-    /* TODO: banner styling */
-    background-color: var(--color1);
-    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: var(--color6);
+    border-radius: 100px;
+    padding: 3rem; /* Add padding for more space */
+    text-align: center; /* Center-align the content */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    margin: 2rem 0; /* Add some spacing around the banner */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.banner:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .banner-title {
@@ -41,6 +56,7 @@ body {
 .banner-subtitle {
     /* TODO: banner subtitle font styling */
     font-size: calc(0.5em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    text-align: center;
 }
 
 .team-member-card {
@@ -48,7 +64,6 @@ body {
     flex-direction: column;
     align-items: center; /* Center horizontally */
     border-radius: 10px; /* Rounded corners */
-    background-color: var(--color2);
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -65,12 +80,36 @@ body {
 }
 
 .team-member-card-blurb {
-    
+    color: var(--color7);
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 5px;
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .our-clients-title {
-    Oct
+    grid-area: Oct;
+    font-size: calc(2em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    text-align: center;
+    background: linear-gradient(to right, var(--color1), var(--color3)); /* Gradient background */
+    border-radius: 50px; /* Circular shape */
+    padding: 0.5rem 2rem; /* Adjust the padding as needed */
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--white-font);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
 }
+
+.our-clients-title:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
 
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
 .client-icon {
@@ -84,16 +123,19 @@ body {
 }
 
 #teamMemberCard1 {
-   grid-area:tm1
+   background-color: var(--color4);
+   grid-area:tm1 
 }
 
 
 #teamMemberCard2 {
+   background-color: var(--color3);
    grid-area:tm2
 }
 
 
 #teamMemberCard3 {
+   background-color: var(--color5);
    grid-area:tm3
 }
 
@@ -159,114 +201,120 @@ body {
 }
 
 #Text1 {
-    grid-area:  TT1;
-    background-color: #3498db; /* Blue background color */
-    color: #ffffff; /* White text color */
-    border-radius: 10px; /* Rounded edges */
-    padding: 1rem; /* Added padding for spacing */
+    grid-area: TT1;
+    background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
+    color: var(--white-font); /* White text color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 1.5rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
     font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text1:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 #Text2 {
-    grid-area:  TT2;
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
-    background-color: #3498db; /* Blue background color */
-    color: #ffffff; /* White text color */
-    border-radius: 10px; /* Rounded edges */
-    padding: 1rem; /* Added padding for spacing */
+    grid-area: TT2;
+    background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
+    color: var(--white-font); /* White text color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 1.5rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text2:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 #Text3 {
-    grid-area:  TT3;
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
-    background-color: #3498db; /* Blue background color */
-    color: #ffffff; /* White text color */
-    border-radius: 10px; /* Rounded edges */
-    padding: 1rem; /* Added padding for spacing */
+    grid-area: TT3;
+    background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
+    color: var(--white-font); /* White text color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 1.5rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text3:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 #Text4 {
-    grid-area:  TT4;
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
-    background-color: #3498db; /* Blue background color */
-    color: #ffffff; /* White text color */
-    border-radius: 10px; /* Rounded edges */
-    padding: 1rem; /* Added padding for spacing */
+    grid-area: TT4;
+    background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
+    color: var(--white-font); /* White text color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 1.5rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text4:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 #Text5 {
-    grid-area:  TT5;
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
-    background-color: #3498db; /* Blue background color */
-    color: #ffffff; /* White text color */
-    border-radius: 10px; /* Rounded edges */
-    padding: 1rem; /* Added padding for spacing */
+    grid-area: TT5;
+    background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
+    color: var(--white-font); /* White text color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 1.5rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text5:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 #Text6 {
-    grid-area:  TT6;
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
-    background-color: #3498db; /* Blue background color */
-    color: #ffffff; /* White text color */
-    border-radius: 10px; /* Rounded edges */
-    padding: 1rem; /* Added padding for spacing */
+    grid-area: TT6;
+    background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
+    color: var(--white-font); /* White text color */
+    border-radius: 15px; /* Rounded edges */
+    padding: 1.5rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
+    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text6:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 
@@ -377,6 +425,14 @@ media queries for progressively bigger screen widths
     "Ci3 Ci3 Ci4 Ci4" minmax(8em, auto)
     "Ci5 Ci5 Ci6 Ci6" minmax(8em, auto)
     "Ci7 Ci7 Ci8 Ci8" minmax(8em, auto)
+    
+    /* Align tm1, tm2, and tm3 horizontally and vertically */
+    #teamMemberCard1, #teamMemberCard2, #teamMemberCard3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
   }
 }
 
