@@ -27,7 +27,6 @@ body {
     margin: 0 auto;
     font-family: Inter;
     color: var(--white-font);
-    
 }
 
 /* Here we define the aspects of style of our elements other than their grid layout */
@@ -151,9 +150,6 @@ body {
     display: flex; /* Use flex display */
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
-
-
-
 }
 
 #clientIcon1 {
@@ -205,14 +201,14 @@ body {
     background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
     color: var(--white-font); /* White text color */
     border-radius: 15px; /* Rounded edges */
-    padding: 1.5rem 2rem; /* Adjust the padding as needed */
+    padding: 1rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.5em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text1:hover {
@@ -225,14 +221,14 @@ body {
     background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
     color: var(--white-font); /* White text color */
     border-radius: 15px; /* Rounded edges */
-    padding: 1.5rem 2rem; /* Adjust the padding as needed */
+    padding: 1rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.5em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text2:hover {
@@ -244,14 +240,14 @@ body {
     background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
     color: var(--white-font); /* White text color */
     border-radius: 15px; /* Rounded edges */
-    padding: 1.5rem 2rem; /* Adjust the padding as needed */
+    padding: 1rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.5em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text3:hover {
@@ -263,14 +259,14 @@ body {
     background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
     color: var(--white-font); /* White text color */
     border-radius: 15px; /* Rounded edges */
-    padding: 1.5rem 2rem; /* Adjust the padding as needed */
+    padding: 1rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.5em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text4:hover {
@@ -282,14 +278,14 @@ body {
     background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
     color: var(--white-font); /* White text color */
     border-radius: 15px; /* Rounded edges */
-    padding: 1.5rem 2rem; /* Adjust the padding as needed */
+    padding: 1rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.5em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text5:hover {
@@ -302,14 +298,14 @@ body {
     background: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
     color: var(--white-font); /* White text color */
     border-radius: 15px; /* Rounded edges */
-    padding: 1.5rem 2rem; /* Adjust the padding as needed */
+    padding: 1rem 2rem; /* Adjust the padding as needed */
     text-align: center; /* Center-align the text */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    font-size: calc(0.25em + 1vw); /* Adjust the base font size and scaling factor as needed */
+    font-size: calc(0.5em + 1vw); /* Adjust the base font size and scaling factor as needed */
 }
 
 #Text6:hover {
@@ -426,12 +422,7 @@ media queries for progressively bigger screen widths
     "Ci5 Ci5 Ci6 Ci6" minmax(8em, auto)
     "Ci7 Ci7 Ci8 Ci8" minmax(8em, auto)
     
-    /* Align tm1, tm2, and tm3 horizontally and vertically */
-    #teamMemberCard1, #teamMemberCard2, #teamMemberCard3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    
     }
   }
 }
